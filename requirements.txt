@@ -26,3 +26,4 @@ soupsieve==2.5
 to-requirements.txt==2.0.3
 uritemplate==4.1.1
 urllib3==2.2.0
+python-dotenv==1.0.1
