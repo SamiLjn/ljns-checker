@@ -3,7 +3,7 @@ name: LJNS API checker
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 10 * * *'
 
 jobs:
   build:
