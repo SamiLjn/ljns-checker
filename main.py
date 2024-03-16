@@ -19,6 +19,7 @@ today_date = datetime.now().strftime("%d %B %Y")
 
 blog_e_sport_active = checker.check_blog_esport_api_status()
 bropoll_active = checker.check_bropoll_api_status()
+todo_active = checker.check_todo_api_status()
 
 # Création de l'e-mail
 msg = MIMEMultipart()
@@ -31,6 +32,7 @@ Ton daily checker du {today_date} des APIs :
 
 - BLOG E-SPORT : {'actif' if blog_e_sport_active else 'inactif'}
 - BROPOLL : {'actif' if bropoll_active else 'inactif'}
+- TODO : {'actif' if todo_active else 'inactif'}
 """
 msg.attach(MIMEText(body, 'plain'))
 
